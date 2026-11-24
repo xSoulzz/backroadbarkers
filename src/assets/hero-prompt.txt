@@ -1,0 +1,4 @@
+﻿Asset: src/assets/groomer-hero.png
+Method: built-in image generation with the user's header screenshot as reference.
+Prompt: Recreate only the photographic artwork from the supplied reference without text, logo, buttons, or UI. Single wide 3:1 Canadian alpine panorama with blue sky, snow-streaked mountains, and evergreen forest. Cream golden retriever at center-right facing forward with mouth closed; female groomer at right wearing a black patterned bandana and black sleeveless shirt, dark messy bun, eyes closed and smiling with cheek leaning toward dog's head, arms at lower edge. Subjects framed chest-up on right half, left half open for text. Warm natural photographic look. No diptych, border, or watermark.
+The image is a generated approximation, not the original photograph.

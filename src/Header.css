@@ -1,0 +1,53 @@
+﻿/* Shared, compact header lockup and day/night preference control. */
+header,header.services-header{height:84px}
+header .header-inner,header.services-header .header-inner,header.gallery-header .header-inner{display:flex;width:min(1320px,calc(100% - 64px));max-width:1320px;height:100%;gap:24px}
+header .brand{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+header .brand-mark{width:83px;height:64px;display:block;flex-shrink:0}
+header .brand-name{font:700 28px/.9 Georgia,'Times New Roman',serif;letter-spacing:-.65px;display:block}
+header .brand-word{display:block}
+header .brand-name strong{font:700 33px/.94 Georgia,'Times New Roman',serif;letter-spacing:-.6px;display:block;margin-top:1px}
+header .brand-name small,header.services-header .brand-name small{font:700 9px/1.2 'DM Sans',Arial,sans-serif;letter-spacing:1.05px;margin-top:7px;display:block;white-space:nowrap}
+header .navigation,header.services-header .navigation{margin:0 0 0 auto;gap:clamp(14px,1.6vw,24px);align-items:center}
+header .navigation a,header .navigation button,header.services-header .navigation a,header.services-header .navigation button{font-size:14px;line-height:1.2;padding-block:15px;white-space:nowrap}
+header .header-actions{gap:12px;margin-left:0;flex-shrink:0}
+header .phone-link,header.services-header .phone-link{font-size:13px;min-height:40px;padding:9px 13px;gap:7px}
+header .phone-link .icon{width:16px;height:16px}
+header .header-book,header.services-header .header-book{font-size:14px;min-height:42px;padding:0 18px;gap:8px;box-shadow:0 3px 8px #001c181a}
+header .header-book .icon{width:18px;height:18px}header .header-book .icon:last-child{display:none}
+.theme-selector{display:flex;align-items:center;gap:2px;padding:3px;border:1px solid #b3c0b3;border-radius:28px;background:#e6ebdf;color:#526859;flex-shrink:0}
+.theme-selector button{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;transition:background .15s,color .15s;position:relative}
+.theme-selector svg{width:19px;height:19px}
+.theme-selector button[aria-pressed=true]{background:#fffaf0;color:#163e2c;box-shadow:0 1px 4px #183c2d26}
+.theme-selector button:hover{color:#9a6718}.theme-selector button:focus-visible{outline-offset:2px}
+.services-header .theme-selector{background:#123e2e;color:#d3decc;border-color:#567462}.services-header .theme-selector button[aria-pressed=true]{background:#f8e9c8;color:#123c2e}
+@media(min-width:901px) and (max-width:1199px){
+ header .header-inner,header.services-header .header-inner,header.gallery-header .header-inner{width:calc(100% - 40px);gap:18px}
+ header .phone-link,header.services-header .phone-link{display:none}
+ header .navigation,header.services-header .navigation{gap:17px}
+ header .brand-mark{width:76px;height:61px}
+}
+@media(max-width:900px){
+ header,header.services-header{height:74px}
+ header .header-inner,header.services-header .header-inner,header.gallery-header .header-inner{width:calc(100% - 28px);gap:10px;height:74px}
+ header .brand{gap:6px;min-width:0}
+ header .brand-mark{width:61px;height:55px}
+ header .brand-name{font-size:23px;letter-spacing:-.5px}
+ header .brand-name strong{font-size:28px;line-height:.95;letter-spacing:-.5px}
+ header .brand-name small,header.services-header .brand-name small{font-size:7px;line-height:1.3;letter-spacing:.75px;margin-top:6px}
+ header .header-actions{gap:8px;margin-left:auto}
+ header .header-actions .header-book,header .phone-link{display:none}
+ header .mobile-toggle{width:42px;height:44px;border:0;border-radius:12px}
+ header .mobile-toggle .icon{width:24px;height:24px}
+ .theme-selector{gap:0;padding:2px;border-radius:24px}
+ .theme-selector button{width:32px;height:38px;border-radius:20px}
+ .theme-selector svg{width:18px;height:18px}
+ header .navigation,header.services-header .navigation{inset:74px 0 auto;margin:0;gap:8px;padding:14px 20px 20px}
+ header .navigation a,header .navigation button,header.services-header .navigation a,header.services-header .navigation button{font-size:16px;line-height:1.3;padding:12px 15px;white-space:normal}
+}
+@media(max-width:360px){
+ header .header-inner,header.services-header .header-inner,header.gallery-header .header-inner{width:calc(100% - 20px);gap:6px}
+ header .brand{gap:4px}header .brand-mark{width:48px;height:48px}
+ header .brand-name{font-size:21px}header .brand-name strong{font-size:26px}
+ header .brand-name small,header.services-header .brand-name small{font-size:6.5px;letter-spacing:.5px;margin-top:5px}
+ header .header-actions{gap:3px}header .mobile-toggle{width:38px}
+}

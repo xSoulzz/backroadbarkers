@@ -14,6 +14,7 @@ import './desktop.css'
 import './Mobile.css'
 import './Header.css'
 import './Tablet.css'
+import './Night.css'
 
 const services: {title:string;description:string;icon:IconName;cell:number;detail:string}[] = [
  {title:'Bath & Refresh',description:'A gentle clean for a healthy, happy coat.',icon:'bath',cell:0,detail:'A refreshing bath, gentle shampoo, thorough rinse and dry to leave your dog feeling clean and comfortable.'},
@@ -31,7 +32,7 @@ function App() {
  const isGalleryPage = /^\/gallery\/?$/.test(window.location.pathname)
  const isInnerPage = isServicesPage || isAboutPage || isGalleryPage
  const [theme,setTheme]=useState<'cream'|'evergreen'>(()=>{try{return localStorage.getItem('barkers-theme')==='evergreen'?'evergreen':'cream'}catch{return 'cream'}})
- useEffect(()=>{document.documentElement.dataset.galleryTheme=theme;document.documentElement.dataset.theme=theme==='cream'?'day':'night';try{localStorage.setItem('barkers-theme',theme)}catch{/* The toggle still works without storage. */}},[theme])
+ useEffect(()=>{document.documentElement.dataset.galleryTheme=theme;document.documentElement.dataset.theme=theme==='cream'?'day':'night';document.documentElement.style.colorScheme=theme==='cream'?'light':'dark';document.querySelector('meta[name="theme-color"]')?.setAttribute('content',theme==='cream'?'#173d30':'#071f18');try{localStorage.setItem('barkers-theme',theme)}catch{/* The toggle still works without storage. */}},[theme])
  const activePage = isGalleryPage ? 'Gallery' : isAboutPage ? 'About' : isServicesPage ? 'Services' : 'Home'
  useEffect(() => { document.title = isGalleryPage ? 'Gallery | Backroad Barkers' : isAboutPage ? 'Meet Bree | Backroad Barkers' : isServicesPage ? 'Our Services | Backroad Barkers' : 'Backroad Barkers | Dog Grooming & Care' }, [isServicesPage, isAboutPage, isGalleryPage])
  const [menu,setMenu]=useState(false)

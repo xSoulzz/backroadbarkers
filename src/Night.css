@@ -1,0 +1,79 @@
+﻿/* Night palette shared by desktop, tablet and mobile. Photography stays untouched. */
+:root[data-theme=night]{color-scheme:dark;--night-bg:#071f18;--night-surface:#0d3025;--night-raised:#174333;--night-text:#ffffff;--night-muted:#d1dfd5;--night-line:#527260;--night-gold:#edcc83;background:var(--night-bg);color:var(--night-text)}
+:root[data-theme=night] body,:root[data-theme=night] #root{background:var(--night-bg);color:var(--night-text)}
+:root[data-theme=night] :is(header,header.services-header){background:#09291f;color:var(--night-text);box-shadow:0 1px 0 #51725c70}
+:root[data-theme=night] :is(.brand-mark,.brand-name){color:var(--night-text)}
+:root[data-theme=night] .brand-name strong{color:var(--night-gold)}
+:root[data-theme=night] .brand-mark>path:first-child{stroke:var(--night-gold)}
+:root[data-theme=night] header .phone-link{color:var(--night-text);border-color:var(--night-line)}
+:root[data-theme=night] header .navigation{color:var(--night-text);border-color:#52726070}
+:root[data-theme=night] header .navigation .active{color:var(--night-gold)}
+:root[data-theme=night] header .navigation .active:after{background:var(--night-gold)}
+:root[data-theme=night] header .mobile-toggle{color:var(--night-text);border-color:var(--night-line)}
+:root[data-theme=night] .theme-selector{background:#153f30;border-color:var(--night-line);color:#e0e8df}
+:root[data-theme=night] .theme-selector button[aria-pressed=true]{background:#fff7e5;color:#102e22}
+:root[data-theme=night] .theme-selector button:hover{color:var(--night-gold)}
+:root[data-theme=night] .theme-selector button[aria-pressed=true]:hover{color:#795214}
+:root[data-theme=night] :is(h1,h2,h3){color:var(--night-text)}
+:root[data-theme=night] :is(h1 em,.philosophy-copy em,.eyebrow,.care-eyebrow,.bree-eyebrow,.philosophy-heart){color:var(--night-gold)}
+:root[data-theme=night] .hero{background:var(--night-bg)}
+:root[data-theme=night] .hero-shade{background:linear-gradient(90deg,#071f18 0%,#071f18f5 30%,#071f1890 45%,transparent 62%)}
+:root[data-theme=night] :is(.hero-description,.section-heading p,.review blockquote,.service-copy p,.care-card-body>p,.bree-bio>p:not(.bio-eyebrow),.values-grid p,.philosophy-copy p){color:var(--night-muted)}
+:root[data-theme=night] :is(.service-copy h3,.google-review strong,.google-review p){color:var(--night-text)}
+:root[data-theme=night] .benefits{background:#103b2c;border:1px solid #52726070;box-shadow:none}
+:root[data-theme=night] .benefit+.benefit:before{background:var(--night-line)}
+:root[data-theme=night] :is(.service-card,.care-card){background:var(--night-surface);box-shadow:0 5px 14px #0004}
+:root[data-theme=night] .service-copy{background:linear-gradient(#143d2e,#0d3025)}
+:root[data-theme=night] :is(.service-icon,.care-icon,.extras-icon,.premium-heading .extras-icon){background:var(--night-raised);color:var(--night-text);border-color:#bca36b}
+:root[data-theme=night] .service-icon .icon{color:var(--night-text)}
+:root[data-theme=night] :is(.about,.booking-callout){background:radial-gradient(ellipse at 70% 0,#21553d,#092c20);color:var(--night-text)}
+:root[data-theme=night] .about-inner>img{border-color:#66836d}
+:root[data-theme=night] .google-review{background:var(--night-raised);box-shadow:0 3px 10px #0005}
+:root[data-theme=night] .review{border-color:var(--night-line)}
+:root[data-theme=night] .review-paw{color:#5f7d66}
+:root[data-theme=night] :is(.round-button,.gallery-layout>.round-button){background:#174333;color:var(--night-text);border-color:#8aa18a}
+:root[data-theme=night] .photo-pair b{border-color:#cbd8c7;background:#164832;color:#fff}
+:root[data-theme=night] .green{background:#f4f7ef;color:#103425;box-shadow:0 4px 10px #0003}
+:root[data-theme=night] .outline{background:#103629;color:var(--night-text);border-color:#b5c7b5}
+:root[data-theme=night] .outline .icon path{fill:#103629}
+:root[data-theme=night] :is(.gold,.header-book.gold,.mobile-booking-bar>.gold,.gallery-booking .gold){background:linear-gradient(#f7dfa4,#e7bd68);color:#102a1e}
+:root[data-theme=night] .gold-outline{color:var(--night-gold);border-color:var(--night-gold);box-shadow:none}
+:root[data-theme=night] :is(.services-page,.about-page){background:radial-gradient(ellipse at 35% 35%,#103327,#071f18);color:var(--night-text)}
+:root[data-theme=night] :is(.care-heading h2,.bio-eyebrow,.value-symbol,.badge-tree,.coming-soon p){color:var(--night-text)}
+:root[data-theme=night] .price-pill{background:#214b38;color:var(--night-text)}
+:root[data-theme=night] .care-plus{background:#f4f7ef;color:#103425}
+:root[data-theme=night] .care-card.featured{background:#163d2c;outline-color:#dab96f}
+:root[data-theme=night] .featured :is(.price-pill,.care-plus){background:#edcc83;color:#102a1e}
+:root[data-theme=night] .best-value{background:#123b2a;color:#ffe1a0;border-color:#d5b26b}
+:root[data-theme=night] .premium-extras,:root[data-theme=night] .local-badge{border-color:#6f855e}
+:root[data-theme=night] .coming-soon>.icon,:root[data-theme=night] .local-watermark{color:#526d56;opacity:.5}
+:root[data-theme=night] .values-grid article{background:radial-gradient(ellipse at center,#1b4937,#113628)}
+:root[data-theme=night] .support-symbol>.icon:last-child{fill:#174333;stroke:#174333}
+:root[data-theme=night] .badge-pin{color:#ffffff;fill:#ffffff}
+:root[data-theme=night] .badge-pin circle{fill:#0d3025;stroke:#0d3025}
+:root[data-theme=night] .gallery-page{--gallery-bg:var(--night-bg);--gallery-ink:var(--night-text);--gallery-muted:var(--night-muted);--gallery-panel:var(--night-surface);--gallery-border:var(--night-line)}
+:root[data-theme=night] .gallery-intro h1 em{color:var(--night-gold)}
+:root[data-theme=night] .gallery-filters button[aria-pressed=true]{background:#ffffff;color:#123c2e;border-color:#ffffff}
+:root[data-theme=night] .client-photo-card button:hover .client-photo-caption{color:var(--night-gold)}
+:root[data-theme=night] .gallery-booking{background:#0c3124}
+:root[data-theme=night] footer{background:radial-gradient(ellipse at 65% 5%,#153f2d,#051b14);color:var(--night-text)}
+:root[data-theme=night] footer .contact :is(a,p){color:var(--night-text)}
+:root[data-theme=night] .mobile-booking-bar{background:#09291ff5;border-color:var(--night-line);box-shadow:0 -3px 16px #0004}
+:root[data-theme=night] .mobile-booking-bar>a{color:var(--night-text)}
+:root[data-theme=night] dialog{background:#0d3025;color:var(--night-text);border-color:var(--night-line);box-shadow:0 20px 70px #0008}
+:root[data-theme=night] dialog::backdrop{background:#00120ee6}
+:root[data-theme=night] dialog p:not(.eyebrow){color:var(--night-muted)}
+:root[data-theme=night] :is(.dialog-close,.lightbox-top button,.lightbox-controls button){background:#174333;color:var(--night-text);border-color:#8aa18a}
+:root[data-theme=night] .dialog-close:hover{background:#23543e}
+:root[data-theme=night] details{border-color:var(--night-line)}
+:root[data-theme=night] .gallery-lightbox #lightbox-help{color:var(--night-muted)}
+:root[data-theme=night] .skip-link{background:#ffffff;color:#123c2e}
+:root[data-theme=night] :is(button,a,summary):focus-visible{outline-color:#f2cf81}
+:root[data-theme=night] ::selection{background:#edcc83;color:#102a1e}
+@media(max-width:599px){
+ :root[data-theme=night] header .navigation{background:#0d3025;border-bottom-color:var(--night-line)}
+ :root[data-theme=night] header .navigation .active{background:#1d4936;color:var(--night-gold)}
+}
+@media(min-width:600px) and (max-width:1199px){
+ :root[data-theme=night] .hero-shade{background:linear-gradient(90deg,#071f18 0%,#071f18 42%,#071f1855 55%,transparent 68%)}
+}

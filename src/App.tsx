@@ -13,6 +13,7 @@ import './App.css'
 import './desktop.css'
 import './Mobile.css'
 import './Header.css'
+import './Tablet.css'
 
 const services: {title:string;description:string;icon:IconName;cell:number;detail:string}[] = [
  {title:'Bath & Refresh',description:'A gentle clean for a healthy, happy coat.',icon:'bath',cell:0,detail:'A refreshing bath, gentle shampoo, thorough rinse and dry to leave your dog feeling clean and comfortable.'},
